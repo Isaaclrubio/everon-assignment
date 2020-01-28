@@ -1,0 +1,8 @@
+{
+  "name": "everon-contact-form",
+  "version": "0.1.0",
+  "description": "Software Engineer, Quality Assurance & Automation Assignment",
+  "main": "index.js",
+  "author": "Isaac Lopez <isaaclrubio@hotmail.com>",
+  "license": "MIT"
+}
