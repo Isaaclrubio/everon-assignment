@@ -6,7 +6,7 @@ Feature: Need Help Form
 
    Scenario: A POC User is able to fill the form
       Given the POC user is on the "main" page
-      # When the user navigates to the "contact us" page
+      When they go to the "contact us" page from the "about" tab
       # And press the "Request help" button
       # And the user submits the "Request help" form
       # Then a verification message is displayed

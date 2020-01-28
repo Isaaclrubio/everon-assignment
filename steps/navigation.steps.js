@@ -1,9 +1,10 @@
 import { Given, When} from "cucumber";
+import navigationMenu from '../page_objects/navigation-menu.page';
 
 Given(/^the POC user is on the "([^"]*)" page$/, (page) => {
-    browser.url('/');
-    browser.pause(5000)
+    navigationMenu.open(page);
 });
 
-When(/^the user navigates to the "([^"]*)" page$/, (page) => {
+When(/^they go to the "([^"]*)" page from the "([^"]*)" tab$/, (page, tab) => {
+    navigationMenu.goTo(page, tab);
 });

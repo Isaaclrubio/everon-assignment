@@ -19,6 +19,7 @@ exports.config = {
     reporters: ['spec'],
     cucumberOpts: {
         require: [
+            './steps/init.js',
             './steps/*.steps.js'
         ],
         compiler: [
