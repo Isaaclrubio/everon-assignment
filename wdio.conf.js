@@ -1,4 +1,5 @@
 exports.config = {
+
     specs: [
         './features/*.feature'
     ],
@@ -26,5 +27,9 @@ exports.config = {
         timeout: 60000
     },
     services: ['selenium-standalone'],
+
+    beforeSession: function () {
+        require('@babel/register');
+    }
 
 };
