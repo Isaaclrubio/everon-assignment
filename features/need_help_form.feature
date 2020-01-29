@@ -9,4 +9,4 @@ Feature: Need Help Form
       When they go to the "Contact us" page from the "about" tab
       And click on the "Request help" button
       And the user submits the form
-      # Then a verification message is displayed
+      Then a verification message is displayed

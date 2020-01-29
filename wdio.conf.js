@@ -8,7 +8,7 @@ exports.config = {
         {
             maxInstances: 1,
             browserName: 'chrome'
-        },
+        }
     ],
     logLevel: 'silent',
     baseUrl: 'https://evbox.com/',

@@ -1,5 +1,7 @@
 export class Page {
 
+    get acceptButton() { return $('#hs-eu-confirmation-button'); }
+
     /**
      * Function to open the main pages (Products, partners, about, resources, etc)
      * using the url.
@@ -13,4 +15,8 @@ export class Page {
         browser.url(page);
     }
 
+    acceptCookies() {
+        this.acceptButton.waitForClickable();
+        this.acceptButton.click();
+    }
 }

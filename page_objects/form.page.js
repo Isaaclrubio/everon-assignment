@@ -7,6 +7,7 @@ class FormComponent {
     get city() { return $('input[name="city"]'); }
     get country() { return $('select[name="country"]'); }
     get message() { return $('textarea[name="message"]'); }
+    get send() { return $('input[value="Send"]'); }
 
     fillForm(info) {
         this.firstName.setValue(info.firstName);
@@ -16,11 +17,10 @@ class FormComponent {
         this.city.setValue(info.city);
         this.country.selectByAttribute('value', info.country);
         this.message.setValue(info.message);
-        browser.pause(10000)
     }
 
     submit() {
-
+        this.send.click();
     }
 
 }

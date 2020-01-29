@@ -4,6 +4,7 @@ import * as data from '../mock_data';
 
 Given(/^the POC user is on the "([^"]*)" page$/, (page) => {
     navigationMenu.open(page);
+    navigationMenu.acceptCookies();
     if(page === 'main') {
         expect(headerHeroContent.title.getText())
             .to.equal(data[page].heroContent.title, `The ${page} was not displayed`);
