@@ -8,5 +8,5 @@ Feature: Need Help Form
       Given the POC user is on the "main" page
       When they go to the "Contact us" page from the "about" tab
       And click on the "Request help" button
-      # And the user submits the "Request help" form
+      And the user submits the form
       # Then a verification message is displayed

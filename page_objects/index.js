@@ -1,9 +1,11 @@
-import navigationMenu from '../page_objects/navigation-menu.page';
-import heroContent from '../page_objects/hero-content.page';
-import headerHeroContent from '../page_objects/header-hero-content.page';
+import navigationMenu from './navigation-menu.page';
+import heroContent from './hero-content.page';
+import headerHeroContent from './header-hero-content.page';
+import formComponent from './form.page';
 
 export {
     navigationMenu,
     heroContent,
-    headerHeroContent
+    headerHeroContent,
+    formComponent
 };
