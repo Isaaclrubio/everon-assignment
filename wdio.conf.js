@@ -7,7 +7,7 @@ exports.config = {
     capabilities: [
         {
             maxInstances: 1,
-            browserName: 'chrome'
+            browserName: process.env.BROWSER
         }
     ],
     logLevel: 'silent',

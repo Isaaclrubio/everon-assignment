@@ -4,6 +4,10 @@
   "description": "Software Engineer, Quality Assurance & Automation Assignment",
   "author": "Isaac Lopez <isaaclrubio@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test:chrome": "BROWSER=\"chrome\" wdio wdio.conf.js",
+    "test:firefox": "BROWSER=\"firefox\" wdio wdio.conf.js"
+  },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
