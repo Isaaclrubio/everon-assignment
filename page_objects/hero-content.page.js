@@ -2,6 +2,7 @@ import { Page } from './main.page';
 
 class HeroContent extends Page {
 
+    get title() { return $$('.hero-content__title').find(title => title.isDisplayed()); }
     get buttons() { return $$(`.hero-content__buttons > a`); }
 
     /**

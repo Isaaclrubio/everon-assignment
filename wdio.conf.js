@@ -31,6 +31,10 @@ exports.config = {
 
     beforeSession: function () {
         require('@babel/register');
+    },
+
+    before: function () {
+        global.expect = require('chai').expect;
     }
 
 };
