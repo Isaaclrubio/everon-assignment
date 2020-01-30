@@ -1,4 +1,4 @@
-### Software Engineer, Quality Assurance & Automation Assignment
+# Software Engineer, Quality Assurance & Automation Assignment
 
 ## Automation Assignment
 As a POC, implement a scenario for contacting Evbox using the Contact Us form.
@@ -30,4 +30,52 @@ $ yarn test:chrome
 
 # To run the tests using firefox
 $ yarn test:firefox
+```
+
+## Project Structure
+### Feature Directory
+The feature directory includes the test scenario to be run in the automation tests, 
+which is `need_help_form.feature`, it uses the gherkin syntax and the project uses 
+cucumber to make the binding between the feature files and the test steps with all 
+the logic written with JavaScript
+
+### Mock Data Directory
+The mock data directory has the data used for the validations, and the information 
+used for the form. Normally I would use an API to fetch all this data.
+
+### Page Objects Directory
+The page objects directory includes the files for the selectors and methods that will 
+be used for the test steps, in order to achieve a more dynamic tests, and reusable code.  
+The files were divided in compontents, so that the test can use the same page objects across 
+different pages, an example of this is the `hero-content.page.js` file that appears in different 
+parts of the website
+
+### Steps Directory
+The steps directory hosts the different test steps that will be binded with feature files and will 
+be used to execute the tests.  
+
+```
+features
+└── need_help_form.feature
+mock_data
+├── contact-us.js
+├── index.js
+├── main.js
+├── request-help.js
+├── submitted-form.js
+└── user-info.js
+page_objects
+├── form.page.js
+├── header-hero-content.page.js
+├── hero-content.page.js
+├── index.js
+├── main.page.js
+└── navigation-menu.page.js
+steps
+├── form.steps.js
+├── hero-content.steps.js
+├── init.js
+└── navigation.steps.js
+package.json
+wdio.conf.js
 ```
