@@ -82,5 +82,5 @@ the user story.
 1. The form is displayed on the correct page
 2. Each field is visible on the form
 3. All the fields can be filled with information
-4. Submit/apply the form **somehow**
+4. The form can be submitted/applied the form **somehow**
 5. Validate the list is updated and the new lost item is displayed
