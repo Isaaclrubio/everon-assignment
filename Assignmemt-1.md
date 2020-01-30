@@ -31,7 +31,7 @@ The Design specifications and Acceptance criteria are only mentioning the happy 
 however there are also a few things missing.  
 The developer and QA need more information in the design specifications in order to implement the feature.  
 
-Here's a series of questions and comments that I would need to be answered before starting the development and QA process.
+Here's a series of questions and comments that I would need to be answered before starting the development and QA process.  
 **General Issues**
    - Where should the form be displayed? (In which page)
    - Is there going to be a submit button?

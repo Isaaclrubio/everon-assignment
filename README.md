@@ -1,5 +1,9 @@
 # Software Engineer, Quality Assurance & Automation Assignment
 
+## Content
+   - The assignment 1 can be found in [Assignment-1.md](Assignmemt-1.md)
+   - The assignment 2 and the explination is in this README file
+
 ## Automation Assignment
 As a POC, implement a scenario for contacting Evbox using the Contact Us form.
 
